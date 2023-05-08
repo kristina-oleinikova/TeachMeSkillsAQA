@@ -26,8 +26,6 @@ class Main {
         System.out.println("Age: " + age);
         System.out.println("Height: " + height);
         System.out.println("Weight: " + weight);
-
-        enter.close();
     }
 
     public static void symbolicValue(){
@@ -37,7 +35,6 @@ class Main {
         char ch = value.next().charAt(0);
 
         System.out.println(ch + "-" + (int)ch);
-        value.close();
     }
 
     public static void calculateBMI() {
