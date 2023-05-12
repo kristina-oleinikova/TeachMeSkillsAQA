@@ -1,16 +1,22 @@
+import java.util.Scanner;
+
 class Main {
     public static void main(String[] args)
     {
-    getSeasonUsingSwitch();
-    getSeasonUsingIfElse(1);
-    divideByTwo(11);
-    currentTemperature(-4);
-    whatIsRainbow(15);
-    oddNumbers();
+        getSeasonUsingSwitch(7);
+        getSeasonUsingIfElse(1);
+        isOddOrEven(11);
+        currentTemperature(-40);
+        whatIsRainbow(15);
+        oddNumbers();
+        returnNumbers();
+        numbersDivideBySeven();
+        squareNumbers();
+        returnFirstTenNumbers(0);
+        getSumOfNumbers();
     }
 
-    public static void getSeasonUsingSwitch(){
-        int numSeason = 1;
+    public static void getSeasonUsingSwitch(int numSeason){
         switch (numSeason){
             case 1:
             case 2:
@@ -34,8 +40,8 @@ class Main {
                 break;
             default:
                 System.out.println("You have entered invalid value, no such season founded");
-                break;
         }
+        System.out.println('\n');
     }
 
     public static void getSeasonUsingIfElse(int numSeason){
@@ -53,14 +59,16 @@ class Main {
         }else{
             System.out.println("The season is not found");
         }
+        System.out.println('\n');
     }
 
-    public static void divideByTwo(int number){
+    public static void isOddOrEven(int number){
         if(number%2 == 0){
             System.out.println("The number is even");
         }else{
             System.out.println("The number is odd");
         }
+        System.out.println('\n');
     }
 
     public static void currentTemperature(int temp){
@@ -70,11 +78,12 @@ class Main {
         else if(temp <= -5 && temp > -20){
             System.out.println("It's normal outside");
         }
-        else if (-20 >= temp){
+        else if (temp <= -20){
             System.out.println("It's cold outside");
         }else{
             System.out.println("Please, enter another value");
         }
+        System.out.println('\n');
     }
 
     public static void whatIsRainbow(int color){
@@ -95,6 +104,7 @@ class Main {
         }else{
             System.out.println("There is not a such Rainbow");
         }
+        System.out.println('\n');
     }
 
     public static  void oddNumbers(){
@@ -103,5 +113,53 @@ class Main {
                 System.out.println(number);
             }
         }
+        System.out.println('\n');
+    }
+
+    public static void returnNumbers(){
+        for (int num = 5; num >=1; num--){
+            System.out.println(num);
+        }
+        System.out.println('\n');
+    }
+
+    public static void getSumOfNumbers(){
+        Scanner enter = new Scanner(System.in);
+
+        System.out.print("Enter positive integer number: ");
+        int intNum = enter.nextInt();
+        int sum = 0;
+
+        for(int num = 1; num <= intNum; num++){
+            sum+=num;
+        }
+            System.out.println(sum);
+            System.out.println('\n');
+    }
+
+
+    public static void numbersDivideBySeven(){
+        int number =7;
+        do {
+            System.out.print(number + " ");
+            number += 7;
+        }while (number <= 98);
+
+        System.out.println('\n');
+    }
+
+    public static void returnFirstTenNumbers(int num){
+        while (num >= -45){
+            System.out.print(num + " ");
+            num -= 5;
+        }
+        System.out.println('\n');
+    }
+
+    public static void squareNumbers(){
+        for (int num = 10; num <=20; num++){
+            System.out.print(num*num + " ");
+        }
+        System.out.println('\n');
     }
 }
