@@ -5,8 +5,8 @@ import java.lang.Math;
 class Main {
     public static void main (String[] args) {
 
-        arrayContainsNumber();
-        createArray();
+//        arrayContainsNumber();
+//        createArray();
         createNewArray();
     }
 
@@ -72,15 +72,12 @@ class Main {
         Scanner input = new Scanner(System.in);
         System.out.print("Please, enter length of new Array: ");
         int lengthOfArray = input.nextInt();
-
-        double insertNumber = Math.random();
-
         double [] newArray = new double[lengthOfArray];
 
-        System.out.print(newArray.length);
+        System.out.println(newArray.length);
 
         for(int i = 0; i < lengthOfArray; i++){
-            newArray[i] = insertNumber;
+            newArray[i] = Math.random();
             System.out.print(newArray[i]+ " ");
         }
 
@@ -93,15 +90,16 @@ class Main {
         double averageNumber = 0;
 
         for (int i = 0; i<newArray.length; i++){
-            if(newArray[1] < minNumber){
+            if(newArray[i] < minNumber){
                 minNumber = newArray[i];
             }
-            if(newArray[1] > maxNumber){
+            if(newArray[i] > maxNumber){
                 maxNumber = newArray[i];
             }
-            sumOfNumbers =+ newArray[i];
-            averageNumber = sumOfNumbers / lengthOfArray;
+            sumOfNumbers += newArray[i];
         }
+
+        averageNumber = sumOfNumbers / lengthOfArray;
 
         System.out.println(maxNumber + " is the biggest number in Array");
         System.out.println(minNumber + " is the smallest number in Array");
