@@ -116,7 +116,7 @@ class Main {
         int sumOfArray2 = 0;
 
         for(int i = 0; i< lengthOfArray; i++){
-            array1[i] = (int)(Math.random()*10);
+            array1[i] = (int)(Math.random()*10)+1;
             sumOfArray1+= array1[i];
             System.out.print(array1[i] + " ");
         }
@@ -124,7 +124,7 @@ class Main {
         System.out.println();
 
         for(int i = 0; i< lengthOfArray; i++){
-            array2[i] = (int)(Math.random()*10);
+            array2[i] = (int)(Math.random()*10)+1;
             sumOfArray2 += array2[i];
             System.out.print(array2[i] + " ");
         }
