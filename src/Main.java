@@ -67,6 +67,7 @@ class Main {
         } else{
             System.out.print("There is no such number in Array");
         }
+        System.out.println();
     }
 
     public static void createNewArray(){
@@ -74,8 +75,6 @@ class Main {
         System.out.print("Please, enter length of new Array: ");
         int lengthOfArray = input.nextInt();
         double [] newArray = new double[lengthOfArray];
-
-        System.out.println(newArray.length);
 
         for(int i = 0; i < lengthOfArray; i++){
             newArray[i] = Math.random();
@@ -105,6 +104,7 @@ class Main {
         System.out.println(maxNumber + " is the biggest number in Array");
         System.out.println(minNumber + " is the smallest number in Array");
         System.out.println(averageNumber + " is the average of numbers from Array");
+        System.out.println();
     }
 
     public static void createTwoDifferentArrays(){
@@ -122,7 +122,6 @@ class Main {
         }
 
         System.out.println();
-        System.out.println(sumOfArray1);
 
         for(int i = 0; i< lengthOfArray; i++){
             array2[i] = (int)(Math.random()*10);
@@ -131,14 +130,13 @@ class Main {
         }
 
         System.out.println();
-        System.out.println(sumOfArray2);
 
-        int avgOfArray1 = sumOfArray1 / lengthOfArray;
-        int avgOfArray2 = sumOfArray2 / lengthOfArray;
+        double avgOfArray1 = (float)sumOfArray1 / lengthOfArray;
+        double avgOfArray2 = (float)sumOfArray2 / lengthOfArray;
 
         if (avgOfArray1 > avgOfArray2){
             System.out.println("The average number of Array 1 is biggest than average number of Array 2");
-        } else if(avgOfArray1 < avgOfArray2){
+        }else if(avgOfArray1 < avgOfArray2){
             System.out.println("The average number of Array 2 is biggest than the average number of Array 1");
         }else if(avgOfArray1 == avgOfArray2){
             System.out.println("The average number of Array 2 is equal of Array 1");
