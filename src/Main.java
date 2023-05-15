@@ -5,9 +5,9 @@ import java.lang.Math;
 class Main {
     public static void main (String[] args) {
 
-//        arrayContainsNumber();
-//        createArray();
-//        createNewArray();
+        arrayContainsNumber();
+        createArray();
+        createNewArray();
         createTwoDifferentArrays();
     }
 
