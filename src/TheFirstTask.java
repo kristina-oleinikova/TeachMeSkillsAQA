@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class TheFirstTask {
     public static void main(String[] args)
     {
         printRandomTrippleArray();
