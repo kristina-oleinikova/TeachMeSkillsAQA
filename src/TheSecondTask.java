@@ -7,11 +7,16 @@ class TheSecondTask {
 
     public static void printChessBoarder() {
         String[][] array = new String[8][8];
-        String cellColor = "W";
+        String whileColor = "W";
+        String blackColor = "B";
 
         for (int i = 0; i < array.length; i++) {
             for (int y = 0; y < array[i].length; y++) {
-                array[i][y] = cellColor;
+                if((i + y) %2 == 0){
+                    array[i][y] = whileColor;
+                } else{
+                    array[i][y] = blackColor;
+                }
                 System.out.print(array[i][y] + " ");
             }
             System.out.println();
