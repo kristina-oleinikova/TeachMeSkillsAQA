@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 class TheFirstTask {
     public static void main(String[] args)
     {
