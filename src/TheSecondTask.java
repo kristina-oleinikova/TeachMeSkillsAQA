@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class TheSecondTask {
     public static void main(String[] args) {
         printChessBoarder();
