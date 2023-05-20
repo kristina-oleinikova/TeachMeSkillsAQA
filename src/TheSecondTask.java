@@ -1,3 +1,4 @@
+
 class TheSecondTask {
     public static void main(String[] args) {
         printChessBoarder();
