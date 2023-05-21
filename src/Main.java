@@ -1,5 +1,3 @@
-import javax.swing.plaf.TableHeaderUI;
-
 class Main {
     public static void main(String[] args)
     {
