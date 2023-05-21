@@ -29,7 +29,7 @@ public class CreditCards {
 
     public void withdrawalMoney(){
         Scanner input = new Scanner(System.in);
-        System.out.print("Please, enter amount of money which you want to insert to your card: ");
+        System.out.print("Please, enter amount of money which you want to withdrawal from your card: ");
         int withdrawalAmountOfMoney = input.nextInt();
 
         currentBalance -= withdrawalAmountOfMoney;
