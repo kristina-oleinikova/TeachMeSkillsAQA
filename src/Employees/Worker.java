@@ -1,9 +1,9 @@
 package Employees;
 
-public class Director extends Employee{
-    public Director(String employeeName, int employeeAge) {
+public class Worker extends Employee{
+    public Worker(String employeeName, int employeeAge) {
         super(employeeName, employeeAge);
-        this.jobPosition = "Director";
+        this.jobPosition = "Worker";
     }
 
     @Override
